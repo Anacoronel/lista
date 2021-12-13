@@ -1,124 +1,128 @@
- <div class="encabezado" id="presentacion personal" >
-     <div class="name">Ana Coronel</div>
-     <div id= "tw">
-       <a href="#" class="tw"><i class="fa fa-twitter"onclick="ingreso_tw()">
-       <div id= "ig"><a href="#" class="social"><i class="fa fa-instagram" onclick="ingreso_ig()">
-      
-       <div id= "ig"><a href="#" class="social"><i class="fa fa-facebook" onclick="ingreso_fb()">
-    
-       <div id= "ig"><a href="#" class="social"><i class="fa fa-pinterest"onclick="ingreso_pin()">
-       
-       <div id= "ig"><a href="#" class="social"><i class="fa fa-github"onclick="ingreso_git()">
-      
-       <div id= "ig"><a href="#" class="social"><i class="fa fa-codepen"onclick="ingreso_code()">
-       
-      
-       
-   
-   
- 
-   <div class="box" id="presentacion personal">
-     <div id="background">
-       <img class="fondo"src="https://images.pexels.com/photos/9954217/pexels-photo-9954217.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"alt="fondo lluvia celeste">       
+<link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+
+<!-- MAIN CONTAINER -->
+    <div id="main_container">
+      <!-- HEADER -->
+      <div id="header">
+        <!-- LOGOTYPE/NAME -->
+        <div class="header_logotype_container">
+          <h1 class="logotype_name">Ana <span class="purple">Coronel</span></h1>
+          <h2 class="logotype_occupation">Frontend Web Developer</h2>
+        </div>
+        <!-- MAIN MENU -->
+        <div class="header_menu_container">
+          <ul class="download_print_buttons horizontal_list">
+            <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
+            <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
+          </ul>
+          <div class="clear"></div>
+          <ul class="header_menu horizontal_list">
+            <li><a class="no_border purple" href="#">Profile</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Work Experience</a></li>
+            <li><a href="#">Featured Projects</a></li>
+            <li><a href="#">Awards</a></li>
+          </ul>
+        </div>
       </div>
-     <div id="informacion-personal"></div>
-     <div id="fotoperfil">
-       <img class="fotodeperfil" src="https://pbs.twimg.com/profile_images/1382785431436193796/RYIvzD5X_400x400.jpg" alt= "foto de perfil">
-     </div> 
-     <div class= "btn-edit"><a href="#" class="btn-right"><i class="las la-pencil-alt" onclick="cambiar_parrafo()">
-     <h1>Ana Coronel</h1>
-     <input type="file" id="file1" onchange="showFile(this)" >
-     <p id=info> Full web stack Argentina Programa<br>
-     Ciudad de Buenos Aires<br>Argentina<br>
-     <div>
-       <input id="edit" type="text" oninput="funcion2(this.value)"style="display:none">
-       
-     </div>
-     <a id="mail"href="mailto:anacoronel@hotmail.com">Mail contacto 
-     <div id= "interes">
-     <button class="bt2" type= button> Me interesa</button>
-     <button class="bt3" type= button> Agregar</button>
-     <button class="bt3" type= button> Mas</button>
-     
-     </div>
+      <!-- LEFT COL -->
+      <div id="left_col">
+        <div class="profile_frame">
+          <div class="profile_picture">
+          <img src="https://pbs.twimg.com/profile_images/1382785431436193796/RYIvzD5X.jpg" style="width:210px;height:210px"alt="profile picture">
+        </div>
+      </div>
 
- <div class="box">
-   <div id="sobre-mi">
-   <div class= "btn-agregar"><a href="#" class="btn-agregar"><i class=" las la-plus">
-     <h1>Acerca de</h1>
-     <div class= "btn-edit"><a href="#" class="btn-right"><i class="las la-pencil-alt">
-     <div class= "btn-edit"><a href="#" class="btn-borrar"><i class="las la-trash-alt">
-     <div><p> Lic. en Turismo, ahora formandome en desarrollo web full stack a traves de Argentina Programa</p></div>
-
- <div class="box">
-   <div id="experiencia">
-   <div class= "btn-agregar"><a href="#" class="btn-agregar"><i class=" las la-plus">
-     <h1>Experiencia Laboral</h1>
-     <div class= "btn-edit"><a href="#" class="btn-right"><i class="las la-pencil-alt">
-     <div class= "btn-edit"><a href="#" class="btn-borrar"><i class="las la-trash-alt">
-
-     <div><p>
-       <ul class="list">
-       <li>Desarrollo web<br>
-       2020-2022<br><br></li>
-       <li>Administrativa contable<br>
-       2000- actualidad<br><br></li>
-       <li>Secretaria Ejecutiva<br>
-       1997-2000<br><br></li>
-       </ul>
-     </div>
-
- <div class="box">
-   <div id="educacion">
-   <div class= "btn-agregar"><a href="#" class="btn-agregar"><i class=" las la-plus">
-     <h1>Formacion</h1>
-     
-     <div class= "btn-edit"><a href="#" class="btn-right"><i class="las la-pen">  
-     <div class= "btn-edit"><a href="#" class="btn-borrar"><i class="las la-trash-alt">
- 
-     <div>
-      <ul class="list">
-       <div id="arg">
-         <img class="logoarg" src="data:image/png;base64,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" width="
-         80" height="auto">
-       </div> 
-         <li>Desarrollo web<br>
-           Argentina Programa<br>
-           
-           2020-2022<br><br></li>
-           <div id="logousal">
-             <img class="logouni" src="https://fundaciontecsal.org/wp-content/themes/zerif-lite-child/images/shield.png" width="
-             auto" height="80" alt= "logo univ salvador">
-           </div> 
-           <li>Universidad del Salvador<br>
-             
-          Lic. en Turismo<br>
-           1991- 1995<br><br></li>
-          
-         </ul>
-         <ul class="listaiconos">
-           <li>desarrollo web argentina programa</li>
-           <li>Universidad del salvador</li>
-         </ul>
-     </div>
-
- <div class="box">
-   <div id="idiomas">
-     <div class= "btn-agregar"><a href="#" class="btn-agregar"><i class=" las la-plus">
-     <h1>Idiomas</h1>
-     
-     <div class= "btn-edit"><a href="#" class="btn-right"><i class="las la-pencil-alt">
-     <div class= "btn-edit"><a href="#" class="btn-borrar"><i class="las la-trash-alt">
-
-     <div> 
-       <ul class="list">
-         <li>Ingles. <br>Nivel avanzado. B2/C1<br><br>
-         </li>
-         <li>Portugues. <br>Basico<br><br>
-         </li>
-         <li>Frances. <br>Basico<br><br>
-         </li>
-         <li>Aleman. <br>Basico<br><br>
-         </li>
-       </ul>
-     </div>
+        <div class="hello_content">
+          <h2>Hello!</h2>
+          <p>I'm passionate about technology and human behavior, hardworker and a fast-learner.</p>
+        </div>
+        <div class="contact_details_content">
+          <h2>Contact details</h2>
+          <p class="purple">Phone:</p>
+          <p>54 9 11 xxxx xxxx</p>
+          <p class="purple">Email:</p>
+          <p>anacoronel@hotmail.com</p>
+          <p class="purple">Adress:</p>
+          <p>Someplace, 5</p>
+          <p>Bs As Argentina</p>
+          <p>1417</p>
+        </div>
+        <a href="mailto:anacoronel@hotmail.com" class="send_message_button">
+          <span class="cut1"></span>
+          <span class="cut2"></span>
+          <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
+        </a>
+        <div class="get_social_content">
+          <h2>Get social</h2>
+          <ul class="social_icons horizontal_list">
+            <li><a class="facebook" href="https://www.facebook.com/"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- PROFILE CONTENT -->
+      <div id="content_container">        
+        <div class="block">
+          <h1>Profile</h1>
+          <blockquote class="profile_quote">
+            <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."</p>
+            <p>Jiddu Krishnamurti.</p>
+            <span class="entypo-quote"></span>
+          </blockquote>
+        </div>
+        <div class="block">
+          <h2>A few words about me</h2>
+          <p>Until now, in my life, I change from active moments with a lot of variety, challenges and improvisations, to moments of tranquility and stability. I consider myself a tolerant and respectful person with open mind and quite honest. I really like to listen people stories and backgrounds and their different experiences around the world.</p>       
+        </div>
+        <div class="horizontal_line">
+          <div class="line_left"></div>
+          <div class="left_circle"></div>
+          <div class="central_circle"></div>
+          <div class="right_circle"></div>
+          <div class="line_right"></div>
+        </div>
+        <div class="block">
+          <h2>Philosophy</h2>
+          <p>I belive in ethic and moral not in imposed rules that you "have to" do or follow.</p>
+          <div class="philosophy_content">
+            <p>I believe life is made from different shades of grey, not from black and white. Furthermore, as a human being with rationality, I think it is our duty to take care of the world and treat others as one would like others to treat oneself. This way of perceiving reality affects my beliefs and my way of behaving. Summarizing on several points:</p>
+            <ul>
+              <li>Pragmatic</li>
+              <li>Honest</li>
+              <li>Respectful</li>
+              <li>Open-minded</li>
+              <li>Coherent</li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="horizontal_line">
+          <div class="line_left"></div>
+          <div class="left_circle"></div>
+          <div class="central_circle"></div>
+          <div class="right_circle"></div>
+          <div class="line_right"></div>
+        </div>
+        <div class="last block">
+          <h2>Interests & Hobbies</h2>
+          <p>I'm passionate about technology and human behavior, both determine almost all my interests and hobbies:</p>
+          <ul>
+            <li>Visiting new places</li>
+            <li>Meeting people</li>
+            <li>Having new experiences</li>
+            <li>Hiking and Biking</li>
+            <li>Web Developing</li>
+            <li>Computer Gamming</li>
+            <li>Manga and Anime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <!-- FOOTER -->
+      <div id="footer">
+        <p class="footer_name">Ana Coronel</p>
+      </div>
+    </div>
